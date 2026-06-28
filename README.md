@@ -148,6 +148,9 @@ package.json
 
 README.md
 
+assets/
+    screenshots/
+
 controllers/
     listings.js
     reviews.js
@@ -237,7 +240,43 @@ CLOUD_API_SECRET=
 
 # 📸 Screenshots
 
-Project screenshots will be added in a future update.
+### Home Page
+
+![Home Page](assets/screenshots/HomePage.png)
+
+---
+
+### Listing Details
+
+![Listing Details](assets/screenshots/ListingDetails-Top.png)
+
+![Listing Details](assets/screenshots/ListingDetails-Bottom.png)
+
+---
+
+### Create Listing
+
+![Create Listing](assets/screenshots/CreateListing.png)
+
+---
+
+### Edit Listing
+
+![Edit Listing](assets/screenshots/EditListing-Top.png)
+
+![Edit Listing](assets/screenshots/EditListing-Bottom.png)
+
+---
+
+### Login
+
+![Login](assets/screenshots/Login.png)
+
+---
+
+### Signup
+
+![Signup](assets/screenshots/Signup.png)
 
 ---
 
