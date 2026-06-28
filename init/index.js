@@ -1,6 +1,9 @@
 const mongoose = require("mongoose");
 const initData = require("./data.js");
 const Listing = require("../models/listing.js");
+const User = require("../models/user.js");
+
+const SEED_USERNAME = "seeddatauser";
 
 const mbxGeocoding = require("@mapbox/mapbox-sdk/services/geocoding");
 require("dotenv").config();
@@ -9,7 +12,8 @@ const geocodingClient = mbxGeocoding({
     accessToken: process.env.MAP_TOKEN,
 });
 
-const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
+// const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
+const dbUrl = process.env.ATLASDB_URL;
 
 main()
     .then(async () => {
@@ -21,11 +25,22 @@ main()
     });
 
 async function main() {
-    await mongoose.connect(MONGO_URL);
+    await mongoose.connect(dbUrl);
 }
 
 const initDB = async () => {
     await Listing.deleteMany({});
+
+    const seedUser = await User.findOne({
+        username: SEED_USERNAME
+    });
+
+    if (!seedUser) {
+        throw new Error(
+            "Please create a user with username 'seeddatauser' before running init."
+        );
+    }
+
     const listingsWithData = await Promise.all(
         initData.data.map(async (obj) => {
             const response = await geocodingClient
@@ -36,9 +51,9 @@ const initDB = async () => {
                 .send();
             return {
                 ...obj,
-                owner: "6a394543b7f7bda02b34f896",
+                owner: seedUser._id,
                 geometry:
-                    response.body.features.length > 0 ? response.body.features[0].geometry : { type: "Point", coordinates: [0, 0], },
+                    response.body.features.length > 0 ? response.body.features[0].geometry : { type: "Point", coordinates: [77.2315, 28.6562], },
             };
         })
     );
