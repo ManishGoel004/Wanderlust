@@ -26,7 +26,7 @@ A full-stack Airbnb-inspired property listing platform built using Node.js, Expr
 
 ## 🌐 Live Demo
 
-[Wanderlust Live Demo](https://wanderlust-frta.onrender.com/)
+🔗 **Visit the Live Application:** [Wanderlust Live Demo](https://wanderlust-frta.onrender.com/)
 
 ---
 
