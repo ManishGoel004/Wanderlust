@@ -29,7 +29,6 @@ async function main() {
 }
 
 const initDB = async () => {
-    await Listing.deleteMany({});
 
     const seedUser = await User.findOne({
         username: SEED_USERNAME
