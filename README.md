@@ -5,15 +5,14 @@ A full-stack Airbnb-inspired property listing platform built using Node.js, Expr
 </p>
 
 <p align="center">
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Mongoose](https://img.shields.io/badge/Mongoose-880000?style=for-the-badge)
-![EJS](https://img.shields.io/badge/EJS-B4CA65?style=for-the-badge)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge)
-![Mapbox](https://img.shields.io/badge/Mapbox-000000?style=for-the-badge&logo=mapbox)
-
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/Mongoose-880000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/EJS-B4CA65?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Mapbox-000000?style=for-the-badge&logo=mapbox" />
 </p>
 
 ## ⭐ Project Highlights
@@ -303,7 +302,7 @@ enhancements beyond the original course implementation.
 
 # 👨‍💻 Author
 
-**Your Name**
+**Manish Goel**
 
 GitHub: [ManishGoel004](https://github.com/ManishGoel004)
 
