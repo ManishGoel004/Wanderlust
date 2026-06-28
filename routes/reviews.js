@@ -7,7 +7,7 @@ const ExpressError = require("../utils/expressError.js");
 const { reviewSchema } = require("../schema.js");
 const { validateReview, isLoggedIn, isReviewAuthor } = require("../middleware.js");
 
-const reviewController = require("../controllers/review.js");
+const reviewController = require("../controllers/reviews.js");
 
 //Post Route
 router.post("/", isLoggedIn, validateReview, wrapAsync (reviewController.createReview));
