@@ -96,7 +96,7 @@ app.use((req, res, next) => {
     const path = req.path;
     res.locals.showSearchBar =
         path === "/listings" ||
-        (path.startsWith("/listings/") && !path.endsWith("/edit") && path !== "/listicngs/new");
+        (path.startsWith("/listings/") && !path.endsWith("/edit") && path !== "/listings/new");
 
     next();
 });
