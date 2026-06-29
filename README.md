@@ -213,7 +213,7 @@ npm start
 or
 
 ``` bash
-nodemon app.js
+node app.js
 ```
 
 ---
